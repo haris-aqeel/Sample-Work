@@ -1,0 +1,45 @@
+.center{
+
+}
+.center_head{
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+.center_title{
+    font-family: Roboto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.center_label{
+    font-family: Roboto;
+    margin-bottom: 15px;
+    font-size: 15px;
+
+}
+
+.center_table{
+    margin-top: 20px
+}
+
+.center_bottom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center_bottom__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.center_bottom__links p {
+    margin: 10px 0px;
+    color: rgb(127, 127, 235);
+    cursor: pointer
+}
