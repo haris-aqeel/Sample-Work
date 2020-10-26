@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import "./Navbar.css";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Divider from "@material-ui/core/Divider";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "auto",
     maxWidth: 300,
     backgroundColor: theme.palette.background.paper,
   },
+  navbar: {
+    fontFamily: "Roboto",
+    paddingTop: "20px",
+  }
 }));
 
 
@@ -28,7 +32,7 @@ const Navbar = () => {
   ]);
 
   return (
-    <div className="navbar">
+    <div className={classes.navbar}>
       <div className={classes.root}>
         <List component="nav" aria-label="main mailbox folders">
           {ListItems.map((currentContent) => {
